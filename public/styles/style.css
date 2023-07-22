@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
+
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #4c535d;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #e79f52;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e79f52;
+    border-top: 0.01rem solid #e79f52;
+    border-bottom: 0.01rem solid #e79f52;
+}
+
+.links-container{
+    display: flex;
+    list-style: none;
+}
+
+.link-item{
+    padding: 0.4rem;
+}
+
+.link-item a{
+    color: #e79f52;
+}
+
+.link-item a:hover{
+    color: #F0C597;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem;
+}
+
+.search-bar{
+    padding: 0.3rem 2rem;
+    display: flex;
+    width: 15rem;
+}
+
+.searchbar{
+    padding: 0.3rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid #e79f52;
+    text-transform: capitalize;
+    background: none;
+    color: #e79f52;
+    outline: none;
+    font-family: "Inter", sans-serif;
+}
+
+.searchbar::placeholder{
+    color: #A16F39;
+}
+
+.searchbutton{
+    padding: 0.3rem;
+    cursor: pointer;
+    background: none;
+    color: #e79f52;
+    text-transform: capitalize;
+    font-size: 1rem;
+    border: none;
+    font-family: "Inter", sans-serif;
+}
+
+.searchbutton:hover{
+    color: #F0C597;
+}
+
+.product-sect{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.product-container{
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    color: #e79f52;
+}
+
+.product-container::-webkit-scrollbar{
+    display: none;
+}
+
+.product-card{
+    flex: 0 0 auto;
+    width: 15.6rem;
+    height: 28rem;
+    margin-right: 2.5rem;
+}
+
+.product-image{
+    position: relative;
+    width: 100%;
+    height: 21rem;
+    overflow: hidden;
+}
+
+.product-thumb{
+    width: 100%;
+    height: 21rem;
+    object-fit: cover;
+}
+
+.card-button{
+    cursor: pointer;
+    background: none;
+    color: #A16F39;
+    text-transform: capitalize;
+    font-size: 1rem;
+    border: none;
+    font-family: "Inter", sans-serif;
+}
+
+.product-card:hover .card-button{
+    opacity: 1;
+}
+
+.product-info{
+    padding: 0.3rem;
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.product-name{
+    text-transform: uppercase;
+}
+
+.price{
+    font-weight: 900;
+    font-size: 0.8ren;
+}
+
+.pre-btn, .nxt-btn{
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    cursor: pointer;
+    z-index: 8;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #4c535d 90%);
+}
+
+.pre-btn{
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn{
+    right: 0;
+}
+
+.pre-btn img, .nxt-btn img{
+    opacity: 0.2;
+}
+
+.pre-btn:hover img, .nxt-btn:hover img{
+    opacity: 1;
+}
+
+.collection-container{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+}
+
+.collection{
+    position: relative;
+}
+
+.collection img{
+    width: 100%;
+    height: 100%;
+}
+
+.collection p{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #e79f52;
+    font-size: 90px;
+    text-transform: capitalize;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    padding: 2rem 10vw;
+    padding-bottom: 2rem;
+    background: #6f7681;
+}
+
+.footer-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-content .logo-footer{
+    font-size: 2rem;
+    color: #e79f52;
+}
+
+.footer-ul-content{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category{
+    width: 1rem;
+    display: grid;
+    grid-gap: 0.1rem;
+}
+
+.category-title{
+    text-transform: capitalize;
+    color: #e79f52;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.category .footer-link{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #A16F39;
+}
+
+.footer-link:hover{
+    color: #F0C597;
+}
+
+.footer-info{
+    color: #e79f52;
+    margin: 2rem 0 0.2rem;
+    text-transform: capitalize;
+}
+
+.footer-social-container{
+    margin-top: 1rem;
+    display: flex;
+    text-transform: capitalize;
+}
+
+.social-link{
+    color: #A16F39;
+    margin: 0.4rem;
+    text-transform: capitalize;
+}
+
